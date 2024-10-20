@@ -55,6 +55,41 @@
         </div>
     </div>
 
+    <div class="messaging-interface" style="display: none;">
+        <div class="header">
+            <div class="battery">100%</div>
+            <img src="settings.png" alt="Settings" class="settings-icon">
+        </div>
+    
+        <div class="messaging-header">
+            <button id="back-to-home" class="back-button">Back</button>
+            <h2>Messages</h2>
+        </div>
+        
+        <div class="chat-window">
+            <div class="message received">Hello! How are you?</div>
+        </div>
+    
+        <div class="message-input-container">
+            <input type="text" id="message-input" placeholder="Type a message">
+            <button id="send-message-button">Send</button>
+        </div>
+    </div>
+    
+<!-- SOS Interface -->
+<div class="sos-interface" style="display: none;">
+    <div class="sos-header">
+        <button id="back-to-home-sos" class="back-button">Back</button>
+        <h2>Emergency SOS</h2>
+    </div>
+    <div class="sos-content">
+        <p>Emergency message sent to emergency contact.</p>
+        <p>Calling emergency services in <span id="sos-countdown">3</span> seconds...</p>
+    </div>
+</div>
+
+
+
     <!-- Phone Interface -->
     <div class="phone-interface" style="display: none;">
         <div class="phone-header">
@@ -67,6 +102,40 @@
         </div>
         <button id="other-contacts-button">Other Contacts</button>
     </div>
+
+    <!-- Dial Pad Interface -->
+    <div class="dial-pad-interface" style="display: none;">
+        <div class="dial-pad-header">
+            <button id="back-to-home-dial" class="back-button">Back</button>
+            <h2>Dial Pad</h2>
+        </div>
+        <div class="dial-pad">
+            <div class="dial-pad-row">
+                <button class="dial-pad-button">1</button>
+                <button class="dial-pad-button">2</button>
+                <button class="dial-pad-button">3</button>
+            </div>
+            <div class="dial-pad-row">
+                <button class="dial-pad-button">4</button>
+                <button class="dial-pad-button">5</button>
+                <button class="dial-pad-button">6</button>
+            </div>
+            <div class="dial-pad-row">
+                <button class="dial-pad-button">7</button>
+                <button class="dial-pad-button">8</button>
+                <button class="dial-pad-button">9</button>
+            </div>
+            <div class="dial-pad-row">
+                <button class="dial-pad-button">*</button>
+                <button class="dial-pad-button">0</button>
+                <button class="dial-pad-button">#</button>
+            </div>
+            <button id="call-button-dial" class="call-button">Call</button>
+        </div>
+    </div>
+
+
+
 </body>
 </html>
 
