@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">5
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Phone and Icon App</title>
+</head>
+<body>
+  <div class="phone" id="phone" data-open="home">
+    <div class="time-display" id="time-display"></div> <!-- Time display at top center -->
+    <div class="screen screen--app" id="app">
+      <div class="screen__close-button" id="close"></div>
+      <div class="screen__app-content">
+        <h1 class="screen__app-image">App name</h1>
+      </div>
+      <img class="screen__app-image" src="" alt="">       
+    </div>
+    
+    <!-- Flashlight button -->
+    <div class="flashlight-container">
+      <span class="flashlight-text">Flashlight</span>
+      <button id="flashlight" class="flashlight-button"></button>
+    </div>
+
+    <div class="screen screen--home" id="home">
+      <div class="icon" data-icon-id="1" data-icon-title="Twitter">
+        <img src="https://upload.wikimedia.org/wikipedia/fr/c/c8/Twitter_Bird.svg" alt="Twitter">
+      </div>
+      <div class="icon" data-icon-id="2" data-icon-title="YouTube">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png" alt="YouTube">
+      </div>
+      <div class="icon" data-icon-id="3" data-icon-title="Spotify">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" alt="Spotify">
+      </div>
+      <div class="icon" data-icon-id="4" data-icon-title="Facebook">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/F_icon.svg" alt="Facebook">
+      </div>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
