@@ -42,10 +42,19 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log(`Brightness set to: ${brightness}`);
     });
 
-    // Call button functionality
+    // Phone button functionality
     const callButton = document.getElementById('call-button');
     callButton.addEventListener('click', function () {
-        window.location.href = 'phone.html'; // Navigate to phone interface
+        document.querySelector('.main-container').style.display = 'none';
+        document.querySelector('.phone-interface').style.display = 'flex';
     });
+
+    // Handle Other Contacts Button
+    const otherContactsButton = document.getElementById('other-contacts-button');
+    if (otherContactsButton) {
+        otherContactsButton.addEventListener('click', function () {
+            alert('Displaying other contacts...');
+        });
+    }
 });
 

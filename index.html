@@ -15,13 +15,9 @@
             <img src="settings.png" alt="Settings" class="settings-icon">
         </div>
 
-        <!-- Clock and Torch Section -->
+        <!-- Clock Section -->
         <div class="clock-container">
             <div class="clock">12:00</div>
-            <div class="torch-container">
-                <span class="torch-label">Torch</span>
-                <button id="torch-toggle">Off</button>
-            </div>
         </div>
 
         <!-- Functionality buttons (4 apps) -->
@@ -40,22 +36,38 @@
             </div>
         </div>
 
-        <!-- Torch Toggle and Sound Control Section -->
-        <div class="torch-sound-container">
-            <div class="torch-container">
-                <span class="torch-label">Torch</span>
-                <button id="torch-toggle">Off</button>
-            </div>
-            <div class="sound-control">
-                <span>Sound</span>
-                <input type="range" id="volume-slider" min="0" max="100" value="50">
-            </div>
-            <div class="brightness-control">
-                <span>Brightness</span>
-                <input type="range" id="brightness-slider" min="0" max="100" value="50">
-            </div>
+        <!-- Torch Button -->
+        <div class="torch-container">
+            <span class="torch-label">Torch</span>
+            <button id="torch-toggle">Off</button>
         </div>
+
+        <!-- Sound control section -->
+        <div class="sound-control">
+            <span>Sound</span>
+            <input type="range" id="volume-slider" min="0" max="100" value="50">
+        </div>
+
+        <!-- Brightness control section -->
+        <div class="brightness-control">
+            <span>Brightness</span>
+            <input type="range" id="brightness-slider" min="0" max="100" value="50">
+        </div>
+    </div>
+
+    <!-- Phone Interface -->
+    <div class="phone-interface" style="display: none;">
+        <div class="phone-header">
+            <h2>Frequent Contacts</h2>
+        </div>
+        <div class="contacts">
+            <div class="contact">John Doe</div>
+            <div class="contact">Jane Smith</div>
+            <div class="contact">Alice Johnson</div>
+        </div>
+        <button id="other-contacts-button">Other Contacts</button>
     </div>
 </body>
 </html>
+
 
