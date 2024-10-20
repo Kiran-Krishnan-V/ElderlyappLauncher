@@ -9,10 +9,22 @@
 </head>
 <body>
     <div class="main-container">
+        <!-- Battery and Settings at the Top -->
         <div class="header">
-            <div class="clock">12:00</div>
+            <div class="battery">100%</div>
+            <img src="settings.png" alt="Settings" class="settings-icon">
         </div>
 
+        <!-- Clock and Torch Section -->
+        <div class="clock-container">
+            <div class="clock">12:00</div>
+            <div class="torch-container">
+                <span class="torch-label">Torch</span>
+                <button id="torch-toggle">Off</button>
+            </div>
+        </div>
+
+        <!-- Functionality buttons (4 apps) -->
         <div class="functionality-container">
             <div class="functionality">
                 <img src="viber.png" alt="Call" class="icon" id="call-button">
@@ -27,6 +39,23 @@
                 <img src="chat.png" alt="Messages" class="icon" id="message-button">
             </div>
         </div>
+
+        <!-- Torch Toggle and Sound Control Section -->
+        <div class="torch-sound-container">
+            <div class="torch-container">
+                <span class="torch-label">Torch</span>
+                <button id="torch-toggle">Off</button>
+            </div>
+            <div class="sound-control">
+                <span>Sound</span>
+                <input type="range" id="volume-slider" min="0" max="100" value="50">
+            </div>
+            <div class="brightness-control">
+                <span>Brightness</span>
+                <input type="range" id="brightness-slider" min="0" max="100" value="50">
+            </div>
+        </div>
     </div>
 </body>
 </html>
+

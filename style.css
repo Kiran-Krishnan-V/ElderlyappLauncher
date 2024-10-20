@@ -19,20 +19,62 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 }
 
+/* Header (Battery and Settings) */
 .header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
-    margin-bottom: 20px; /* Space below clock */
+}
+
+.battery {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.settings-icon {
+    width: 30px;
+    height: 30px;
+}
+
+/* Clock and Torch Section */
+.clock-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .clock {
     font-size: 40px; /* Larger clock size */
-    font-weight: bold; /* Bold text */
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
+.torch-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Torch label and toggle button */
+.torch-label {
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#torch-toggle {
+    background-color: #FFDE21;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Functionality buttons */
 .functionality-container {
     display: grid; /* Use grid layout */
     grid-template-columns: repeat(2, 1fr); /* Two columns */
@@ -58,4 +100,33 @@ body {
 
 .icon:hover {
     transform: scale(1.1); /* Scale up on hover */
+}
+
+/* Sound and Brightness Control Section */
+.torch-sound-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.sound-control, .brightness-control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.sound-control span,
+.brightness-control span {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+#volume-slider,
+#brightness-slider {
+    width: 200px;
 }
