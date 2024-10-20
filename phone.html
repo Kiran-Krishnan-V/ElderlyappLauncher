@@ -4,27 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="phone.js" defer></script>
-    <title>Phone Interface</title>
+    <script src="script.js" defer></script>
+    <title>Elderly App</title>
 </head>
 <body>
-    <div class="phone-container">
-        <h1>Frequent Contacts</h1>
-        <div class="contact-list">
-            <div class="contact">
-                <span class="contact-name">Alice Johnson</span>
-                <button class="call-button">Call</button>
+    <div class="main-container">
+        <!-- Battery and Settings at the Top -->
+        <div class="header">
+            <div class="battery">100%</div>
+            <img src="settings.png" alt="Settings" class="settings-icon">
+        </div>
+
+        <!-- Clock Section -->
+        <div class="clock-container">
+            <div class="clock">12:00</div>
+        </div>
+
+        <!-- Functionality buttons (4 apps) -->
+        <div class="functionality-container">
+            <div class="functionality">
+                <img src="viber.png" alt="Call" class="icon" id="call-button">
             </div>
-            <div class="contact">
-                <span class="contact-name">Bob Smith</span>
-                <button class="call-button">Call</button>
+            <div class="functionality">
+                <img src="dial-pad.png" alt="Dial Pad" class="icon" id="dial-pad-button">
             </div>
-            <div class="contact">
-                <span class="contact-name">Charlie Brown</span>
-                <button class="call-button">Call</button>
+            <div class="functionality">
+                <img src="sos.png" alt="SOS" class="icon" id="sos-button">
+            </div>
+            <div class="functionality">
+                <img src="chat.png" alt="Messages" class="icon" id="message-button">
             </div>
         </div>
-        <button class="other-contacts-button">Other Contacts</button>
+
+        <!-- Torch Button -->
+        <div class="torch-container">
+            <span class="torch-label">Torch</span>
+            <button id="torch-toggle">Off</button>
+        </div>
+
+        <!-- Sound control section -->
+        <div class="sound-control">
+            <span>Sound</span>
+            <input type="range" id="volume-slider" min="0" max="100" value="50">
+        </div>
+
+        <!-- Brightness control section -->
+        <div class="brightness-control">
+            <span>Brightness</span>
+            <input type="range" id="brightness-slider" min="0" max="100" value="50">
+        </div>
     </div>
+
+    <!-- Messaging Interface -->
+    <div class="messaging-interface" style="display: none;">
+        <div class="header">
+            <div class="battery">100%</div>
+            <img src="settings.png" alt="Settings" class="settings-icon">
+        </div>
+    
+        <div class="messaging-header">
+            <button id="back-to-home" class="back-button">Back</button>
+            <h2>Messages</h2>
+        </div>
+        
+        <div class="chat-window">
+            <div class="message received">Hello! How are you?</div>
+        </div>
+    
+        <div class="message-input-container">
+            <input type="text" id="message-input" placeholder="Type a message">
+            <button id="send-message-button">Send</button>
+        </div>
+    </div>
+
+    <!-- SOS Interface -->
+    <div class="sos-interface" style="display: none;">
+        <div class="sos-header">
+            <button id="back-to-home-sos" class="back-button">Back</button>
+            <h2>Emergency SOS</h2>
+        </div>
+        <div class="sos-content">
+            <p>Emergency message sent to emergency contact.</p>
+            <p>Calling emergency services in <span id="sos-countdown">3</span> seconds...</p>
+        </div>
+    </div>
+
+    <!-- Phone Interface -->
+    <div class="phone-interface" style="display: none;">
+        <div class="phone-header">
+            <h2>Frequent Contacts</h2>
+        </div>
+        <div class="contacts">
+            <div class="contact">John Doe</div>
+            <div class="contact">Jane Smith</div>
+            <div class="contact">Alice Johnson</div>
+        </div>
+        <button id="other-contacts-button">Other Contacts</button>
+        <button id="back-button">Back</button> <!-- Back Button -->
+    </div>
+
 </body>
 </html>
